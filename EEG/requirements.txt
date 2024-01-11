@@ -1,0 +1,5 @@
+ipykernel # remember to install this if you want to use the env from a ipynb
+matplotlib==3.7.3
+mne[data]
+ipywidgets
+pandas
