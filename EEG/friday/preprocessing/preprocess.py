@@ -59,12 +59,12 @@ if __name__ == "__main__":
         'Image/wNeu/iNeg': 42, # negative image (after neu word) 
         'Correct/wPos': 101, # correct response ('b') to pos w + image 
         'Correct/wNeg': 102, # correct response ('y') to neg w + image 
-        #'Correct/wNeu/iPos': 111, # cor resp ('b') to neu w + pos image 
+        'Correct/wNeu/iPos': 111, # cor resp ('b') to neu w + pos image 
         'Correct/wNeu/iNeg': 112, # cor resp ('y') to neu w + neg image 
         'Incorrect/wPos': 202, # incor resp ('y') to pos w + image 
         'Incorrect/wNeg': 201, # incor resp ('b') to neg w + image 
         'Incorrect/wNeu/iPos': 212, # incor resp ('y') to neu w + pos i 
-        #'Incorrect/Neu/iNeg': 211 # incor resp ('b') to neu w + neg i
+        'Incorrect/Neu/iNeg': 211 # incor resp ('b') to neu w + neg i
     }
 
     for participant in ["Group1", "Group5", "Group6"]:
@@ -111,13 +111,17 @@ if __name__ == "__main__":
         # creating the events
         events, _ = mne.events_from_annotations(raw)
 
+        # remove events from event id that are not in the data
+        event_id_tmp = {key: value for key, value in event_id.items() if value in events[:, 2]}
+
+
         reject = {"eeg": 100e-6}
 
         # creating the epochs
         epochs = mne.Epochs(
             raw, 
             events, 
-            event_id=event_id,
+            event_id=event_id_tmp,
             tmin=-0.2, 
             tmax=0.5, 
             baseline=(-0.2, 0), 
