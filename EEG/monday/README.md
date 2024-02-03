@@ -1,7 +1,6 @@
 # EEG LAB DAY 1
 
 ## Plan for today
-
 ### 1. Create virtual environment
 The first step today is to create a virtual environment. Follow the instruction in the [README.md](../README.md#setting-up-virtual-environment) file one step up in the EEG folder.
 

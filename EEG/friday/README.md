@@ -14,4 +14,31 @@ This directory holds three notebooks that can serve as inspiration when analysin
 ## Data
 I have preprocessed some data and made it available to you on uCloud for the purpose of demonstatring the three types of analysis. It consists of FaceWord data from last years EEG course from 3 participants. 
 
+## Plan for today
 
+### 1. Preprocess and epoch your own data
+The first step is to preprocess your own data. You can find inspiration in the notebooks from [monday](../monday/README.md). Also note that loading in the data is a bit different, as you will have to load in your own data. You can use the following code:
+```
+# path to the data for the given groups data
+path = "xxxxxxxxx.vhdr"
+
+raw = mne.io.read_raw_brainvision(path, preload=True)
+```
+
+#### Preprocessing checklist
+- [ ] Load in the data
+- [ ] Remove bad channels
+- [ ] Re-reference the data (common average reference)
+- [ ] Filter the data
+- [ ] Epoch the data 
+    - [ ] Set the time window for the epochs
+    - [ ] Identify the events
+    - [ ] Baseline correction
+    - [ ] Set a threshold for rejecting epochs
+- [ ] Downsample the data
+
+
+Additonal preprocessing could include ICA.
+
+### 2. Analyse your own data
+After preprocessing the next step is to play around with analysis of your own data. You can use the notebooks in this folder as inspiration. When you reach this point call Laura over to have a little chat!
