@@ -1,7 +1,9 @@
 """
 Preprocessing pipeline for EEG data
 
-Loops over the participants and saves the epochs. 
+Loops over the participants and saves the epochs.
+
+Note that this is just a quick script made for you to have some data to play with! Refer to the preprocessing notebook if you want to see the steps in more detail.
 """
 
 from pathlib import Path
@@ -27,7 +29,6 @@ def setup_logger():
 
 
 if __name__ == "__main__":
-
     path = Path(__file__).parent
 
     data_path = path.parents[2] / "data"
@@ -111,9 +112,8 @@ if __name__ == "__main__":
         # creating the events
         events, _ = mne.events_from_annotations(raw)
 
-        # remove events from event id that are not in the data
+        # remove events from event id that are not in the data (to avoid errors when creating the epochs)
         event_id_tmp = {key: value for key, value in event_id.items() if value in events[:, 2]}
-
 
         reject = {"eeg": 100e-6}
 
