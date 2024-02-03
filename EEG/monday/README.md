@@ -8,7 +8,7 @@ The first step today is to create a virtual environment. Follow the instruction 
 ### 2. (Optional) Python brush-up
 I have created a notebook with a few exercises to brush up on your Python skills. I have included things that I found especially relevant in terms of understanding the syntax used when working with EEG data using the `MNE-python` package. Additionally there is an introduction to working with 3-dimensional arrays in Numpy. I recommend you scroll through the notebook and determine whether you need to do the exercises or not. 
 
-The notebook is called [Python_brush_up.ipynb](Python_brush_up.ipynb) and is located in the this folder.
+The notebook is called [python_brush_up.ipynb](python_brush_up.ipynb) and is located in the this folder.
 
 ### 3. Preprocessing  EEG data
 The next step is to preprocess EEG data, which we will go through using the [EEG_preprocessing.ipynb](EEG_preprocessing.ipynb) notebook. This notebook will guide you through the steps of loading EEG data and preprocessing it. I recommend you sit in small groups and talk through the exercises as you go along. 
