@@ -1,6 +1,5 @@
 # Code for the EEG lab
-This repository contains all the coding exercises for the EEG lab.
-
+This repository contains all the coding exercises for the EEG lab. All code was tested using Coder Python version 1.86.1 on uCloud. 
 
 ## Overview
 The repository is divided into two main folders:
