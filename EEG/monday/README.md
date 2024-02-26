@@ -5,7 +5,7 @@
 The first step today is to create a virtual environment. Follow the instruction in the [README.md](../README.md#setting-up-virtual-environment) file one step up in the EEG folder.
 
 ### 2. (Optional) Python brush-up
-I have created a notebook with a few exercises to brush up on your Python skills. I have included things that I found especially relevant in terms of understanding the syntax used when working with EEG data using the `MNE-python` package. Additionally there is an introduction to working with 3-dimensional arrays in Numpy. I recommend you scroll through the notebook and determine whether you need to do the exercises or not. 
+I have created a notebook with a few exercises to brush up on your Python skills. I have included things that I found especially relevant in terms of understanding the syntax used when working with EEG data using the `MNE-python` package. Additionally there is an introduction to working with 3-dimensional arrays in Numpy. I recommend you scroll through the notebook and determine determine whether you want to spend time on it or not.
 
 The notebook is called [python_brush_up.ipynb](python_brush_up.ipynb) and is located in the this folder.
 
