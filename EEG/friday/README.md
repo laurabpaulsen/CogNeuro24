@@ -1,5 +1,5 @@
 ## Analysis of your own EEG data
-This directory holds three notebooks that can serve as inspiration when analysing your own data. The notebooks are:
+This directory holds four notebooks that can serve as inspiration when analysing your own data. The notebooks are:
 
 - **windowed_mean_subject_lvl.ipynb & windowed_mean_group_lvl.ipynb :** These notebooks introduce the concept of a windowed mean, where two conditions are compared by taking the mean of the signal in a certain time window in relevant sensors and comparing the means. This includes some basic plotting and statistical testing using a t-test.
 
