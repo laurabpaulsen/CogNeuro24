@@ -166,5 +166,3 @@ cython_debug/
 *.fif
 
 data/*
-
-visualisation/*
