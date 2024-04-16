@@ -166,3 +166,10 @@ cython_debug/
 *.fif
 
 data/*
+
+
+fMRI/*
+
+EEG/friday/extra/group_12.ipynb
+EEG/friday/extra/check_files.ipynb
+EEG/friday/extra/EEG_brainvision_AH.ipynb
